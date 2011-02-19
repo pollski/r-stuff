@@ -3,12 +3,43 @@
 <head>
   <title>RStuff</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
+  <script>
+  	$(document).ready(function(){
+  		
+  		
+		
+		position = $("#login_module").position();
+  		$("#login_dialog").dialog({
+		    autoOpen: false,
+		    position: [position.left,position.top+25] ,
+		    draggable: false,
+		    width : 300,
+		    height : 150, 
+		    resizable : false
+		    
+		    });
+		
+		$(".ui-dialog-titlebar").hide();
+
+		
+		
+		$("#login_btn").click(function(){
+		$("#login_dialog").load("login/login");
+		$("#login_dialog").dialog('open')
+		});
+  		
+    });
+  </script>
 </head>
+<div id="login_dialog" style="text-align:left"></div>
+<div id='site_header'><div id="rstuff_logo">r-stuff logo</div>
+<div id="login_module" ><%= @controller._status.html_safe %></div></div>
 <body>
 
 <%= yield %>
 
+<div id="site_footer" >About Us | Contact</div>
 </body>
 </html>

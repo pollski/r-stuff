@@ -1,4 +1,8 @@
 RStuff::Application.routes.draw do
+  match 'login(/:action)' => 'login'
+
+  match 'user(/:id)' => 'user#index'
+  root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
