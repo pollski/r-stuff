@@ -1,0 +1,67 @@
+html
+{
+	font-family: "Arvo";
+	font-size: 12px;
+}
+a, a:visited, a:active, a:hover
+{
+	color: #07C;
+	text-decoration: none;	
+}
+.login_items
+{
+	color: #07C;
+	text-decoration: none;	
+	cursor: pointer;
+	margin: 5px;
+}      
+#site_header
+{
+	margin:0 auto;
+	height:60px;
+	width:100%;
+	text-align: left;
+	font-size: 18px;
+	padding: 0;
+}
+#rstuff_logo
+{
+	float:left;
+	margin-top:5px;
+	margin-left:25px;
+	 width:250px;
+	 height:50px;
+	 border: 1px solid  black;
+	 text-align:center;
+}
+#login_module
+{
+	font-size:12px;
+	text-align: center;
+	float:right;
+	height:50px;
+	width:300px;
+	margin-right:25px
+}
+#site_footer
+{
+	height: 20px;
+	width:115px;
+	margin:5px auto 0;
+	font-size:12px;
+	color:gray;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arvo'), url('http://themes.googleusercontent.com/font?kit=PVOGkCtOX7e_D5p8KeOQ4_esZW2xOQ-xsNqO47m55DA') format('truetype');
+}
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Arvo Bold'), local('Arvo-Bold'), url('http://themes.googleusercontent.com/font?kit=EWSoWmYPmujCiQESfOIkHgLUuEpTyoUstqEm5AMlJo4') format('truetype');
+}

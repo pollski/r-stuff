@@ -1,0 +1,19 @@
+<script>
+	$(function() {
+		$( "button").button().css('margin-right',"30px");});
+</script>
+<div style="text-align:right;width:250px;float:left">
+<label for="email">Email:</label> 
+  <input id="email" name="email" type="text" />
+  <div class="ui-state-error ui-corner-all" id="test" style="<%= "display:none;" if @email_error.nil?  %>padding:0;text-align:center"> 
+	<p style="padding:0px;margin:5px;"><%= @email_error %></p></div><br>
+ <label for="pass">Password:</label> 
+  <input id="pass" name="pass" type="password" /> 
+  <div class="ui-state-error ui-corner-all" style="<%= "display:none;" if @password_error.nil?  %>padding:0;text-align:center"> 
+	<p style="padding:0px;margin:5px;"><%= @password_error %></p></div><br>
+  <button onclick="alert('here')">Login</button>
+</div>
+
+
+
+
